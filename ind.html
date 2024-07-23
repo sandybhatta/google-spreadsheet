@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Spreadsheet Clone</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div id="layout">
+        <div id="local">
+            <button id="copy" class="cutCopyPaste"><i class='bx bx-copy'></i>
+                <span>copy</span>
+            </button>
+            <button id="cut" class="cutCopyPaste"><i class='bx bx-cut' ></i>
+                <span>cut</span>
+            </button>
+            <button id="paste" class="cutCopyPaste"><i class='bx bx-paste' ></i>
+                <span>paste</span>
+            </button>
+
+            <button id="bold" class="boldItalicUnder"><i class='bx bx-bold' ></i>
+                <span>bold</span>
+            </button>
+            <button id="italic" class="boldItalicUnder"><i class='bx bx-italic' ></i>
+                <span>italic</span>
+            </button>
+            <button id="underline" class="boldItalicUnder"> <i class='bx bx-underline' ></i>
+                <span>underline</span>
+            </button>
+
+            <input type="color" id="color" value="#000000"> 
+            <input type="color" id="bg-color" value="#ffffff">
+
+            <button id="left" class="alignItems"><i class='bx bx-align-left' ></i>
+                <span>left</span>
+            </button>
+            <button id="center"class="alignItems"><i class='bx bx-align-middle'></i>
+                <span>center</span>
+            </button>
+            <button id="right"class="alignItems"><i class='bx bx-align-right'></i>
+                <span>right</span>
+            </button>
+            <button id="justify"class="alignItems"><i class='bx bx-align-justify' ></i>
+                <span>justify</span>
+            </button>
+
+            <select id="selectItem"></select>
+            <button id="newFile">new file</button>
+            
+            <button id="sort">Sort Column</button>
+            <button id="filter">Filter Column</button>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+    </div>
+    <div id="spreadsheet-container"></div>
+
+    <script src="ap.js"></script>
+</body>
+</html>
